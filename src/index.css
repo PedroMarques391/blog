@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-slate-300 p-0 m-0 font-open-sans
+}
+
+body::-webkit-scrollbar {
+    @apply  hidden
+  }
+  
+body {
+    -ms-overflow-style: none;
+  scrollbar-width: none;
+  }
+
+input::placeholder,
+textarea::placeholder {
+    @apply font-open-sans text-gray-500
+}
+
+input:focus,
+textarea:focus {
+    @apply outline-none
+}
+
+.glassEffect {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+a,
+nav button {
+    @apply no-underline bg-transparent border-none text-black 
+    duration-300 text-[1em] cursor-pointer font-open-sans
+}
+
+a:hover,
+nav button:hover {
+    @apply text-neutral-400
+}
+
+form {
+    @apply my-0 w-full md:w-3/5 mx-auto px-10
+}
+
+label {
+    @apply flex flex-col mb-[2em] 
+}
+
+label span {
+    @apply mb-[.3em] font-bold text-left
+}
+
+input, textarea {
+    @apply box-border py-[.8em] px-5 w-full placeholder:p-1 placeholder:font-mono placeholder:uppercase placeholder:text-lg
+}
+
+.btn {
+    @apply bg-green-500 text-white text-center cursor-pointer rounded-lg w-32 font-bold border-none py-[10px] px-[15px]
+}
+
+.btn.btnDark {
+    @apply bg-black rounded-lg
+}
+.btnDark {
+    @apply bg-black rounded-xl p-4 text-gray-200 w-44 font-mono text-lg hover:text-white hover:bg-gray-800 transition-all duration-500 mb-5
+}
+
+.btn.btnOutline {
+    @apply bg-transparent rounded-none text-black border border-black py-[7px] mx-[30px]
+}
+.btn:hover {
+    @apply bg-green-800 text-white
+}
+
+.btn.btnOutline:hover {
+    @apply bg-black
+}
+
+.btn.btnDanger:hover {
+    @apply bg-red-600
+}
+.btn.btnDark:hover {
+    @apply bg-slate-600
+}
+
+button[disabled] {
+    @apply bg-gray-500
+}
+
+.error {
+    @apply text-red-200 bg-red-600 border border-black p-1 rounded-md text-center mt-5
+}
+
+.sectionPageSearch {
+    @apply mb-10 bg-slate-100 overflow-hidden rounded-lg flex flex-col justify-between max-w-mx-600
+}
+
+.imagePageSearch {
+    @apply w-600 h-300 overflow-hidden
+}
+.h2PageSearch {
+    @apply p-5 text-2xl font-semibold
+}
+
+.divAdditionalInfoPageSearch {
+    @apply flex justify-around
+}
+
+.p1PageSearch {
+    @apply font-medium text-gray-500 text-sm mb-2
+}
+
+.divReadAndDate {
+    @apply flex font-medium text-gray-500 text-sm justify-center p-2
+}
+
+.pDate {
+    @apply mb-2 mr-1
+}
+
+.pRead {
+    @apply mb-2
+}
+
+.linkPageSearch {
+    @apply line-clamp-3 overflow-hidden px-5 text-left leading-snug
+}
+
+.tagsContainerPageSearch {
+    @apply flex font-semibold tracking-wide p-5 justify-start flex-wrap
+}
+
+.tagsPageSearch {
+    @apply mr-3 mt-3 p-3 text-center rounded-full bg-gray-200
+}
+
+.sectionHomePage {
+    @apply flex justify-between my-14 p-2 md:p-0
+}
+
+.linkHomePage {
+    @apply order-2 mx-auto lg:ml-1
+}
+
+.imageHomePage {
+    @apply w-28 h-28 sm:w-40 sm:h-full lg:w-48
+}
+
+.divContainerHomePage {
+    @apply order-1 flex flex-col justify-between w-3/5 ml-0 md:p-2 lg:mx-auto
+}
+
+.h2HomePage {
+    @apply order-2 font-bold text-lg md:text-xl my-2
+}
+
+.p1HomePage {
+    @apply order-1 text-sm md:tracking-wider
+}
+
+.divReadAndDateHomePage {
+    @apply flex order-3 items-center mb-2
+}
+
+.tagButtonHomePage {
+    @apply p-2 rounded-full bg-gray-200
+}
+
+.link2HomePage {
+    @apply order-4 line-clamp-1 
+}
+
+.hiddenTag {
+    @apply hidden md:block
+}
