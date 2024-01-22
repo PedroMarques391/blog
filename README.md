@@ -1,4 +1,4 @@
-# Blog Pessoal Desenvolvido em React.js, Firebase e Estilizado com Tailwind CSS
+# Blog Pessoal
 
 O meu blog pessoal foi desenvolvido utilizando tecnologias modernas, incluindo React.js para a construção da interface, Firebase como banco de dados para armazenar posts e credenciais de usuário, e Tailwind CSS para estilização. A interface é totalmente responsiva, adaptando-se perfeitamente a diversos tipos de telas, desde dispositivos móveis até desktops.
 
